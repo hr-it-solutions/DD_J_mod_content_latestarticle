@@ -1,0 +1,44 @@
+<extension type="module" version="3.8.0" method="upgrade">
+    <name>mod_dd_content_latestarticle</name>
+    <creationDate>17.10.2017</creationDate>
+    <author>HR IT-Solutions Florian Häusler</author>
+    <authorEmail>info@hr-it-solutions.com</authorEmail>
+    <authorUrl>https://www.hr-it-solutions.com</authorUrl>
+    <copyright>Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions</copyright>
+    <license>GNU/GPLv2 only</license>
+    <version>1.0.0.0</version>
+    <description>MOD_DD_CONTENT_LATESTARTICLE_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_dd_content_latestarticle">mod_dd_content_latestarticle.php</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field
+                        name="associated_article_mode"
+                        type="radio"
+                        default="0"
+                        label="MOD_DD_CONTENT_LATESTARTICLE_ASSOCIATED_ACTIVE_MODE_LABEL"
+                        description="MOD_DD_CONTENT_LATESTARTICLE_ASSOCIATED_ACTIVE_MODE_DESC"
+                        class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_dd_content_latestarticle.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_dd_content_latestarticle.sys.ini</language>
+    </languages>
+
+    <media destination="mod_dd_content_latestarticle" folder="media">
+        <folder>css</folder>
+    </media>
+</extension>
